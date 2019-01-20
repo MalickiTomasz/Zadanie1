@@ -1,0 +1,743 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c0488211-7e32-4830-8d51-11c8e6184252" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DimProduct</ID>
+  <Name>DimProduct</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2110" scrolltop="-2871" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9446" y="10742" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="vDimProduct" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5186" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c00004214000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="olap_vDimProduct" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2110</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2871</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="170" xmlns="">
+          <Shapes NodeWidth="212">
+            <Shape Id="Product Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Product Key" />
+                <Attribute Id="Brand Name" />
+                <Attribute Id="Class ID" />
+                <Attribute Id="Class Name" />
+                <Attribute Id="Color ID" />
+                <Attribute Id="Color Name" />
+                <Attribute Id="Manufacturer" />
+                <Attribute Id="Product Category Description" />
+                <Attribute Id="Product Category Label" />
+                <Attribute Id="Product Category Name" />
+                <Attribute Id="Product Description" />
+                <Attribute Id="Product Label" />
+                <Attribute Id="Product Subcategory Description" />
+                <Attribute Id="Product Subcategory Label" />
+                <Attribute Id="Product Subcategory Name" />
+                <Attribute Id="Stock Type ID" />
+                <Attribute Id="Stock Type Name" />
+                <Attribute Id="Style ID" />
+                <Attribute Id="Style Name" />
+                <Attribute Id="Unit Of Measure ID" />
+                <Attribute Id="Unit Of Measure Name" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Product Subcategory Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Product Subcategory Key" />
+              </Attributes>
+              <Position x="290" y="20" />
+            </Shape>
+            <Shape Id="Product Category Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Product Category Key" />
+              </Attributes>
+              <Position x="560" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e96659b4-00de-4f63-8948-2b10c4d6d034">
+    <DataSourceViewID>ContosoRetailDW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="52c27e22-99f1-470b-8231-0808caf30d6e">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Translations>
+    <Translation dwd:design-time-name="50ea9d7e-9500-463d-a127-92cb3c5bf05e">
+      <Language>1045</Language>
+      <Caption>WymiarProduktu</Caption>
+    </Translation>
+  </Translations>
+  <Attributes>
+    <Attribute dwd:design-time-name="9d218c0b-bce8-42e8-b41c-d66f1245061f">
+      <ID>Product Key</ID>
+      <Name>Product Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="34e0bd18-69e7-40ea-be7c-14982588440d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b428fd58-fe50-4e4e-9fc5-3223425c1939">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>ProductKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="1fc5a288-a137-4bd8-bd9a-a6fd25e8cd2b">
+        <DataType>WChar</DataType>
+        <DataSize>500</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="60537693-6146-446d-8608-4a3b48dc6fd3">
+          <TableID>olap_vDimProduct</TableID>
+          <ColumnID>ProductName</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="1f7f95ba-3be0-4a53-8d6a-faf363a7a72a">
+          <Language>1045</Language>
+          <Caption>KluczProduktu</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9483d751-651d-4f93-ba47-5d587a75cf65">
+          <AttributeID>Product Label</AttributeID>
+          <Name>Product Label</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d62a043d-4ee9-4f00-b84d-7b8809b5baf4">
+          <AttributeID>Product Description</AttributeID>
+          <Name>Product Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e88c185d-f9da-4a7f-a51c-20e140467950">
+          <AttributeID>Manufacturer</AttributeID>
+          <Name>Manufacturer</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="144a09e8-fb73-49b6-ae0c-2ea548173888">
+          <AttributeID>Brand Name</AttributeID>
+          <Name>Brand Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0a00f4a0-1606-443e-9644-2912b52e634b">
+          <AttributeID>Class ID</AttributeID>
+          <Name>Class ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cf7a2f62-9221-47a9-bf2f-4d1e678d1a43">
+          <AttributeID>Class Name</AttributeID>
+          <Name>Class Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a8b9ddc3-9c99-42fd-a21c-d87755173319">
+          <AttributeID>Stock Type ID</AttributeID>
+          <Name>Stock Type ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="899104af-b8b5-48b0-b0c2-4dbdd5b486ee">
+          <AttributeID>Stock Type Name</AttributeID>
+          <Name>Stock Type Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="35eae445-fe28-4b1f-a2fc-6939083e4146">
+          <AttributeID>Unit Of Measure ID</AttributeID>
+          <Name>Unit Of Measure ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fb7a9c3e-5882-41fb-85e1-69f745b198f0">
+          <AttributeID>Unit Of Measure Name</AttributeID>
+          <Name>Unit Of Measure Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a1da93a8-3361-4921-a155-78119f2a7fc0">
+          <AttributeID>Style ID</AttributeID>
+          <Name>Style ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f978c7b0-7a27-458d-8831-05c410588a42">
+          <AttributeID>Style Name</AttributeID>
+          <Name>Style Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="019a920a-7fde-487b-b2e7-de724abff395">
+          <AttributeID>Color ID</AttributeID>
+          <Name>Color ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7523eee0-bc13-445a-8328-72315a2b802c">
+          <AttributeID>Color Name</AttributeID>
+          <Name>Color Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a90b11af-af99-48cc-91c2-c32836d92dac">
+          <AttributeID>Product Subcategory Label</AttributeID>
+          <Name>Product Subcategory Label</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eab9da5f-3922-4db2-bfe2-4bb7dcbec5ab">
+          <AttributeID>Product Subcategory Name</AttributeID>
+          <Name>Product Subcategory Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a0e40a55-5a68-41c1-a631-4870ec2f8e9a">
+          <AttributeID>Product Subcategory Description</AttributeID>
+          <Name>Product Subcategory Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3a24f7a7-0902-4e4b-96ca-198b56cc5946">
+          <AttributeID>Product Category Label</AttributeID>
+          <Name>Product Category Label</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="aa06d7f7-a78f-4800-acdb-ee8156462350">
+          <AttributeID>Product Category Name</AttributeID>
+          <Name>Product Category Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0e1d1e35-a8ec-472a-8972-9cbc42946b60">
+          <AttributeID>Product Category Description</AttributeID>
+          <Name>Product Category Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e44a2bc4-d3d6-4f4b-8ddd-d9426cfafef8">
+          <AttributeID>Product Subcategory Key</AttributeID>
+          <Name>Product Subcategory Key</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b39f155e-add9-4cbd-8cdd-7feac4fdb98f">
+      <ID>Product Label</ID>
+      <Name>Product Label</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9ce3faf8-1ce0-4b4c-8bf5-6e9ec4bf4e10">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e9b6a3cc-18b8-4cc8-ab05-9a96b29dc9af">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>ProductLabel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="28789f82-ea98-4dd8-9354-698b5cb240a1">
+          <Language>1045</Language>
+          <Caption>EtykietaProduktu</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e0a072ee-5bc7-496e-b5e7-fa2d3c6ba136">
+      <ID>Product Description</ID>
+      <Name>Product Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="669a1c17-9c96-4b28-86c6-c483bd63b176">
+          <DataType>WChar</DataType>
+          <DataSize>400</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8a018da3-56b5-4794-8854-7907d821f1e2">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>ProductDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="1d44277e-fb1b-4501-a74a-61b6b183c04c">
+          <Language>1045</Language>
+          <Caption>OpisProduktu</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4a1dc4a2-9483-4e07-a319-f78c2f5df0c0">
+      <ID>Manufacturer</ID>
+      <Name>Manufacturer</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4464627f-6844-4c16-9d1d-cacc5232994e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e6a40a99-fa85-4d68-b3e4-eacd668bb561">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>Manufacturer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="2c94f221-679c-4f99-8d1c-a5d6b963ea25">
+          <Language>1045</Language>
+          <Caption>Producent</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="aa632b49-5105-40f0-948b-f0a52e960e80">
+      <ID>Brand Name</ID>
+      <Name>Brand Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e46a9a63-d532-41e4-a2aa-ea190cc85e15">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2c822105-1e7e-45b4-964e-0fbdbefbad0b">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>BrandName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="5e2b63ad-80ec-4666-9869-0b3654968208">
+          <Language>1045</Language>
+          <Caption>Marka</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a9a3cd88-92fc-44e3-81a6-3048a028a77f">
+      <ID>Class ID</ID>
+      <Name>Class ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4700fc08-cb6c-4c2a-888a-aa9e5e4f43a4">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3b5b6d57-44e6-46cb-af28-9a2951643cee">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>ClassID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d9b19c9e-b72a-461a-97e4-9da9d8d93a96">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="44e093cc-adc5-411d-95c1-8344eb1f42b1">
+          <TableID>olap_vDimProduct</TableID>
+          <ColumnID>ClassName</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="72cda2ac-8445-4129-afc0-372491fd9184">
+      <ID>Class Name</ID>
+      <Name>Class Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="abd30f9b-8dba-4a86-95c2-9109e5e92199">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3193e8a8-47ae-49e5-aca5-9c83130455df">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>ClassName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3d5bfa80-01be-4d28-9cbf-009f97555200">
+      <ID>Stock Type ID</ID>
+      <Name>Stock Type ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8e0555f4-0eba-49bb-917b-905b49c92fbb">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9c47f51b-a1a7-4bad-a385-99e3c0339ee5">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>StockTypeID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="1f7477a5-a665-4901-b410-f37a88d8ebb6">
+        <DataType>WChar</DataType>
+        <DataSize>40</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e37deb56-7bba-4f31-9898-c9eb96b071e6">
+          <TableID>olap_vDimProduct</TableID>
+          <ColumnID>StockTypeName</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="07aafdc6-d397-4b20-a996-4b5ec72773b9">
+      <ID>Stock Type Name</ID>
+      <Name>Stock Type Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="edbf7447-e360-462a-a52e-a7a538196fb1">
+          <DataType>WChar</DataType>
+          <DataSize>40</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="13ec1273-9014-4710-a8e6-4beb29c99b07">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>StockTypeName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="98658712-2016-4317-a2ff-9ab7fb64170d">
+      <ID>Unit Of Measure ID</ID>
+      <Name>Unit Of Measure ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c6f89c43-92a8-4ef6-983e-bd2b0fcd1245">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab812e71-42b3-49f0-9801-c3ea688f5c2d">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>UnitOfMeasureID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e278e1b5-ffb7-4a88-b897-f4c85d3657ca">
+        <DataType>WChar</DataType>
+        <DataSize>40</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="feb4bab8-7467-4300-8e22-ef5fb3ba11fd">
+          <TableID>olap_vDimProduct</TableID>
+          <ColumnID>UnitOfMeasureName</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="a977ee53-bfe9-4894-aec5-57b30602ba57">
+          <Language>1045</Language>
+          <Caption>JednostkiMiaryIdentyfikator</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3b0d7767-f9b0-45aa-b950-885adc3dafc5">
+      <ID>Unit Of Measure Name</ID>
+      <Name>Unit Of Measure Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="16e8f0c8-173c-47a1-bc05-98a27e89cd69">
+          <DataType>WChar</DataType>
+          <DataSize>40</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a9f27a57-5b07-46b9-b7ae-3ae9c9e7107d">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>UnitOfMeasureName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="828ff1d1-c135-4d58-a3f1-9f49b70c256e">
+          <Language>1045</Language>
+          <Caption>NazwJednostkiMiary</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c8cc97fa-3bee-47bb-afc1-5d87c71c41d2">
+      <ID>Style ID</ID>
+      <Name>Style ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="24e6d306-9687-4d6b-9172-7442e6ac9911">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cda3eb4f-285a-43aa-b5c5-2929e77405e6">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>StyleID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e5245adc-b9e5-42cd-8b1a-4d48f9092a1a">
+      <ID>Style Name</ID>
+      <Name>Style Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d059f585-20d9-4c8c-a5bb-802efdf4bfad">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2bca07cf-794f-4e35-a647-23a1513052fd">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>StyleName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="90dcdd35-558e-4946-a1ac-25ad9300c7f6">
+      <ID>Color ID</ID>
+      <Name>Color ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aba9e6c5-15b6-4109-8163-5e787926c6f2">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="508a898c-0181-4312-a90f-80a18def3818">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>ColorID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="db49537b-6fb4-4818-a181-17049985b61f">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a815393a-c387-4bf2-b69a-a10917b05003">
+          <TableID>olap_vDimProduct</TableID>
+          <ColumnID>ColorName</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7ee45e06-9217-45f4-9251-06f1be34bfc0">
+      <ID>Color Name</ID>
+      <Name>Color Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d34c159f-3f5a-4dbd-a612-269c2bc09646">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3d85706b-6885-472f-9c98-5100d9098699">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>ColorName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fb2fb10c-46f1-4c98-b458-649f8913cea7">
+      <ID>Product Subcategory Key</ID>
+      <Name>Product Subcategory Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="26303383-ddc1-43fd-a0fa-9b02461c2bf6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="22866752-b835-4dd5-b098-499a5e0e473f">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>ProductSubcategoryKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="79d38e52-85e2-48e6-8015-ef24af5674d3">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1ffefb8e-967b-4e6c-8838-41a8e9e8c5f1">
+          <TableID>olap_vDimProduct</TableID>
+          <ColumnID>ProductSubcategoryName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="20f0a4bc-91e1-4284-8155-c7d688a30fe0">
+          <AttributeID>Product Category Key</AttributeID>
+          <Name>Product Category Key</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="614ee842-240d-4410-b660-7a1153ef1bbd">
+      <ID>Product Subcategory Label</ID>
+      <Name>Product Subcategory Label</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f4b29b68-eeee-46fa-a053-72b0aa3bd49c">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="21e6093d-fe5b-4493-84d5-5a5d85d76f16">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>ProductSubcategoryLabel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="137313d3-ec2e-4b31-bcab-3f15ecc8e2de">
+      <ID>Product Subcategory Name</ID>
+      <Name>Product Subcategory Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="927f8f8b-f6a0-46c6-ab3d-71628c4bcf94">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0b18c9d1-7e1d-4e18-8cda-55613f9238ec">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>ProductSubcategoryName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1c0866c7-f7c7-4ce7-8dfd-613b3eb6e2f0">
+      <ID>Product Subcategory Description</ID>
+      <Name>Product Subcategory Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3a7b0752-b65f-45ec-bb0e-3833bcec4189">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fdb814f8-c8a6-43ff-9309-074e17a45051">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>ProductSubcategoryDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0fcb13fb-5e73-49be-97fd-89a48ab6a4c8">
+      <ID>Product Category Key</ID>
+      <Name>Product Category Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="730103bb-a59f-48ee-a3ae-9b4269e23763">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="843edcba-ee93-44e2-92e0-d83f0e08c75d">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>ProductCategoryKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="a647f0b9-b708-4a84-860e-b1290e5f955b">
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ae2796b4-1033-47ca-a5a8-c791de115bb7">
+          <TableID>olap_vDimProduct</TableID>
+          <ColumnID>ProductCategoryName</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="56c36db8-dc6f-4154-ab9e-e840736517a9">
+      <ID>Product Category Label</ID>
+      <Name>Product Category Label</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b8f6cec9-0b3f-41db-a43f-6e9b2f18f475">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="abf6b021-76d8-494b-979b-36af389097b6">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>ProductCategoryLabel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e7d7c251-05f6-4c47-8d13-43ce4784b797">
+      <ID>Product Category Name</ID>
+      <Name>Product Category Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bbba1327-a424-412a-85d9-b5727dfdb790">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0acea047-05b1-4280-af63-d41f1ae3a806">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>ProductCategoryName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="17b08194-56b0-4a65-a44a-4cf9634c56b1">
+      <ID>Product Category Description</ID>
+      <Name>Product Category Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c8420525-197d-43d3-ae19-55d6fb2720ff">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0c2fb479-2608-4835-a902-162e57d55fbe">
+            <TableID>olap_vDimProduct</TableID>
+            <ColumnID>ProductCategoryDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="855c13d8-c0bd-4838-99ef-151455cfc30b">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="234f6d5d-18a6-4b67-bf84-b22b661d6345">
+          <ID>Product Category Key</ID>
+          <Name>Product Category Key</Name>
+          <SourceAttributeID>Product Category Key</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="8200b149-8743-4e1e-8f32-f21cebd1ebde">
+          <ID>Product Subcategory Key</ID>
+          <Name>Product Subcategory Key</Name>
+          <SourceAttributeID>Product Subcategory Key</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5d642a69-5a9c-42e6-bb80-e31812a1b247">
+          <ID>Product Key</ID>
+          <Name>Product Key</Name>
+          <SourceAttributeID>Product Key</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="9b5eccf6-15eb-4d47-9c0d-3f8431dcd3e9">
+              <Language>1045</Language>
+              <Caption>KluczProduktu</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
